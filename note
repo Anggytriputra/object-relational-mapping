@@ -1,0 +1,15 @@
+<!-- Package -->
+
+npm i express doteenv mysql2 sequelize
+
+npx sequelize-cli init
+
+<!-- create table mysql in terminal -->
+
+npx sequelize-cli model:generate --name User --attributes username:string,email:string,password:string,age:integer
+
+migration: tempat pencatatan jika terjadi ada perubahan pada table seperti GIT.
+
+note:
+
+- kita tidak boleh mengatur atau alter table didalam mysql, kita hanya bisa alter hanya melalui sequelize saja
